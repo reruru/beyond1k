@@ -1,0 +1,241 @@
+/*@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+div:not(#update) {
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	color: black;
+}
+a {
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	color: black;
+}*/
+html, body {
+	margin: 0;
+	padding: 0;
+	/*background-color: black;*/
+	text-align: center;
+}
+/*#title {
+	margin: auto;
+	margin-top: 7%;
+	text-align: center;
+}*/
+
+#table_wrapper {
+	width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+    word-break: break-word;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+.blind {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.td_article {
+    padding-left: 12px;
+    padding-right: 18px;
+}
+
+.article-board tbody td {
+    border-bottom-color: #f2f2f2;
+}
+
+.article-board table {
+    width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+    word-break: break-word;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+tbody td {
+    height: 28px;
+    padding: 4px 7px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+.board-number {
+    display: table-cell;
+    padding-right: 7px;
+    vertical-align: middle;
+}
+
+.board-list {
+	display: table-cell;
+	padding-top: 1px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+.p-nick a {
+    color: #666 !important;
+}
+
+.p-nick {
+    position: relative;
+    height: auto;
+    border: 0;
+    padding: 0;
+}
+
+.article {
+    line-height: 18px;
+    color: #333;
+}
+
+.board-list .head {
+    color: #959595;
+}
+
+.board-list .cmt {
+    font-weight: bold;
+    color: #ff2f3b;
+}
+
+em {
+	font-style: normal;
+}
+
+#sample_row {
+	display: none;
+}
+
+
+
+
+
+.prev-next {
+    background-color: #f9f9f9;
+}
+
+#prev-next-10 {
+	display: inline;
+}
+
+.prev-next {
+    margin-top: 32px;
+    /*height: 40px;*/
+    padding-top: 16px;
+    text-align: center;
+}
+
+.prev-next a.on {
+    border-color: #e5e5e5;
+}
+
+.prev-next a.on {
+    border: solid 1px;
+    background-color: #fff;
+    color: #03c75a;
+}
+
+.prev-next a {
+	color: #333;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 0 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 24px;
+    font-family: arial, sans-serif;
+}
+
+.m-tcol-c {
+    color: #333;
+}
+
+.prev-next .pgL, .prev-next .pgR {
+    width: auto;
+}
+
+
+
+
+table .title {
+	display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+thead th {
+    border-top-color: #333;
+    border-bottom-color: #f2f2f2;
+    color: #4e4e4e;
+}
+
+thead th {
+    height: 40px;
+    padding: 2px
+px
+;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center;
+}
+
+#title_wrapper {
+	width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+#header {
+	width: 860px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#board_select {
+	width: 50%;
+	text-align: left;
+	float: left;
+}
+
+#items_per_page {
+	width: 50%;
+	text-align: right;
+	vertical-align: bottom;
+	float: left;
+	top: 50%;
+	position: relative;
+}

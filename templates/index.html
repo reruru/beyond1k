@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+		<title> RE : FIND </title>
+		<!--<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+		<link rel="shortcut icon" href="{{ url_for('static', filename='img/fav.ico') }}" />
+	</head>
+	<body>
+		<div id="header">
+			<div id="board_select">
+				<input type="checkbox" id="isd"><label>이세돌 팬아트, 통합 BEST 팬아트, 금손 일러레의 방</label></p>
+				<input type="checkbox" id="wak"><label>우왁굳 팬아트</label></p>
+				<input type="checkbox" id="gomem"><label>고멤 팬아트</label></p>
+			</div>
+			<div id="items_per_page">
+				<!--form-->
+					<input type="number" style="width:45px;" id="num_items" value=15>
+					개씩
+					<button onclick="goto_page()">보기</button>
+				<!--/form-->
+			</div>
+		</div>
+<!---------------------------------------------------------------------------->
+		<div id="title_wrapper">
+		<table class="title">
+			<caption><span class="blind">게시물 목록</span></caption>
+			<colgroup>
+				<col style="width:88px">
+				<col>
+				<col style="width:118px">
+				<col style="width:80px">
+				<col style="width:68px">
+				<col style="width:68px">
+			</colgroup>
+			<thead>
+				<tr id="normalTableTitle">
+					<th>
+						<div id="articleHeadListDiv" class="select_component3 ">
+						<a href="#" onclick="nhn.search.toggleBoxLayer('articleHeadListDiv', true);return false;" class="select_box" style="color:inherit;">id</a>
+						</div>
+					</th>
+					<th scope="col"><span class="article_title">제목</span></th>
+					<th scope="col" class="th_name">작성자</th>
+					<th scope="col">작성일</th>
+					<th scope="col">조회</th>
+					<th scope="col">
+						<a href="/ArticleList.nhn?search.clubid=27842958&amp;search.menuid=344&amp;search.boardtype=L&amp;search.useuparticle=true&amp;userDisplay=15" class="sort_likes" style="color:inherit;">좋아요</a>
+					</th>
+				</tr>
+			</thead>
+		</table>
+		</div>
+<!------------------------------------------------------------------------------>		
+		<div id="table_wrapper">
+		<table>
+			<caption><span class="blind">게시물 목록</span></caption>
+			<colgroup>
+                <col style="width:88px;">
+                <col>
+                <col style="width:118px">
+                <col style="width:80px">
+                <col style="width:68px">
+                <col style="width:68px">
+        	</colgroup>
+			<tbody id="table_body">
+				<tr id="sample_row">
+                	<td colspan="2" class="td_article">
+                        <div class="board-number">
+							<div class="inner_number"><!----></div>
+						</div>
+                    	<div class="board-list">
+                        	<div class="inner_list">
+                        		<a class="article" href="" onclick="clickcr(this, 'gnr.title','','',event);">
+									<span class="head"><!----></span>
+									<!---->
+                            	</a>
+                                <!--span class="list-i-img">
+									<i class="blind">사진</i>
+								</span>
+                                <a href="/ArticleRead.nhn?clubid=27842958&;page=1&;menuid=344&;boardtype=L&;articleid=11576725&;referrerAllArticles=false&;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>32</em>]
+                                </a>
+                                <span class="list-i-new">
+									<i class="blind">new</i>
+								</span-->
+							</div>
+						</div>
+					</td>
+                	<td class="td_name">
+                    	<div class="pers_nick_area">
+							<table role="presentation" cellspacing="0">
+								<tbody>
+									<tr>
+										<td class="p-nick">
+											<a href="#" class="m-tcol-c"><!----></a>
+											<span class="mem-level">
+												<img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11"></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                	</td>
+					<td class="td_date"><!----></td>
+                	<td class="td_view">?</td>
+                    <td class="td_likes">?</td>
+            </tr>
+		</table>
+		<div class="prev-next">
+			<a href="" class="pgL"><span class="m-tcol-c">이전</span></a>
+			<div id="prev-next-10">
+				<!---->
+			</div>
+			<a href="" class="pgR"><span class="m-tcol-c">다음</span></a>
+			<div id='select-page' style="margin-top:20px;height:80px">
+				<!--form-->
+					<input type="number" style="width:60px;" id="page_idx" value="1">
+					페이지로
+					<button onclick="goto_page()">이동</button>
+				<!--/form-->
+			</div>
+
+		</div>	
+		<!--div id="footer" style="height:40px;"></div-->
+		<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+	</body>
+</html>
